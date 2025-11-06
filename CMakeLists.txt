@@ -15,11 +15,14 @@ include_directories(
 )
 
 set(SOURCES
-        src/main.cpp
+    src/main.cpp
 )
 
 set(HEADERS
-
+    src/math/Vector2.h
+    src/math/Vector3.h
 )
 
-add_executable(pbd-x src/main.cpp)
+add_executable(pbd-x src/main.cpp
+        src/math/Vector2.h
+        src/math/Vector3.h)
